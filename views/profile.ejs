@@ -1,0 +1,66 @@
+<%- include('header'); -%>
+
+<body class="bg-gradient-primary">
+  <div class="flexProf">
+
+    <div class="page-header text-center blue">
+    </div>
+
+
+
+    <div class="p-5 profileCardLeft">
+      <div class="jumbotron text-center">
+        <div id="center" class="well offWhite">
+          <% if (user.local.email) { %>
+          <img id="profilePicture" class="img-fluid rounded-circle mb-3"
+            src="https://cdn.dribbble.com/users/1347136/screenshots/6576137/character.jpg" alt="">
+          <p class="profileText">
+            <strong>Hello <%= user.local.name %> !</strong><br>
+          </p>
+          <a id="btn-size-three" href="/logout" class="btn btn-primary btn-user btn-block">Logout</a>
+          <a id="btn-size-three" href="/search" class="btn btn-primary btn-user btn-block">Start Searching!</a>
+
+          <% } else { %>
+          <a href="/connect/local" class="btn btn-default">Connect Local</a>
+          <% } %>
+
+        </div>
+      </div>
+      <hr>
+    </div>
+
+
+
+    <div class="p-5 profileCardRight">
+      <div class="jumbotron text-center">
+        <div>
+          <div class="col-sm-6">
+            <h3>Your Notifications</h3>
+            <ul class="notificationUl">
+              <% for(var i=0; i<user.savedQueries.length; i++) {%>
+              <li>
+                <%- user.savedQueries[i]%>
+                <span data-search="<%- user.savedQueries[i]%>" class="fa fa-trash cursor"></span>
+              </li>
+              <% } %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+</div>
+<%- include('footer'); -%>

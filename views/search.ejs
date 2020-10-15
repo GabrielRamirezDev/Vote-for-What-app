@@ -1,0 +1,85 @@
+<%- include('header'); -%>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vote for What?</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="../img/liberty.png">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style2.css">
+
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="jumbotronSearch jumbotron text-center jumbo" id="heroBG">
+            <img class="redirect" src="/img/liberty.png" alt="" />
+            <h1>
+                <span class="title1">Vote for</span>
+                <span class="title2">What?</span>
+            </h1>
+
+            <a id="btn-size-one" href="/profile" class="btn btn-default"><span class="fa fa-user"></span>Profile</a>
+            <a id="btn-size-one" href="/logout" class="btn btn-default"><span class="fa fa-user"></span>Logout</a>
+        </div>
+        <div class="filter-inputs">
+        </div>
+    </div>
+
+
+
+
+    <div class="col-lg-7 searchWidth borderBottom">
+        <form action="/search" method="post" class="user">
+
+            <div class="form-group">
+                <input name="search" type="text" class="form-control form-control-user searchWidth" id="searchInput"
+                    placeholder="Keyword">
+            </div>
+
+            <div class="form-group">
+                <input name="location" type="text" class="form-control form-control-user searchWidth" id="locationInput"
+                    placeholder="Location">
+            </div>
+            <div class="buttonWidth">
+                <input id="submitBtn" class="submit btn btn-primary btn-user btn-block searchSize"
+                    type="submit"></input>
+                <button id="saveNotification" class="btn btn-primary btn-user btn-block searchSize">Set
+                    Notifications</button>
+
+            </div>
+        </form>
+        <div class="col-sm-6">
+            <ul id="searchUl">
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <script src="/search.js"></script>
+</body>
+<%- include('footer'); -%>

@@ -1,0 +1,36 @@
+
+
+
+.title1 {
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+  font-family: "Poppins", sans-serif;
+}
+.title2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 60px;
+}
+.jumbo {
+  background-color: #456bd9;
+  color: aliceblue;
+}
+
+
+#center{
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 100%;
+}
+
+.marginBottom{
+ margin-bottom: 70px;
+}
+
+.blackTxt{
+  color: black;
+}
+
+#profilePicture{
+  max-width: 200px;
+  max-height: 200px;
+}
