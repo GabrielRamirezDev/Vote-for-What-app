@@ -12,6 +12,12 @@ Allows users to easily search for ballot initiatives based on location and keywo
 
 * [HTML]
 * [CSS]
+* [SCSS]
+* [EJS]
+* [Javascript]
+* [Express.js]
+* [Node.js]
+* [Bootstrap]
 
 ## Live Application Demo
 
