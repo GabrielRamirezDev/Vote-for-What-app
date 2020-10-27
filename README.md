@@ -21,4 +21,4 @@ Allows users to easily search for ballot initiatives based on location and keywo
 
 ## Live Application Demo
 
-* [Click Here!](http://www.voteforwhat.org)
+* [Click Here!](https://www.voteforwhat.org)
